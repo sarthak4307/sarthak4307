@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Styles</title>
+    <style>
+        .none {border-style: none;background-color: #9eb0de;}
+        .dotted {border-style: dotted;border-width: 3px; background-color: aqua;border-radius: 4px;}
+        .dashed {border-style: dashed;border-width: 2px;background-color: azure;border-radius: 4px;}
+        .ridge{border-style: ridge;border-width: 3px;border-radius: 4px;}
+        .solid{border-style: solid;border-width: 3px;border-radius: 4px;font-family: ro;}
+        .groove{border-style: groove;border-width: 3px;}
+        img{border-style: ;}
+    </style>
+  </head>
+  <body style="background-color: rgb(0, 255, 0);">
+    <p class="none">None</p>
+    <p class="dotted">Dotted</p>
+    <p class="dashed">Dashed</p>
+    <p class="ridge">Ridge</p>
+    <p class="solid">Solid</p>
+    <p class="groove">
+    <img src="data:image/jpeg;base64,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" alt="">
+       LPU
+       <br>
+       B.Tech CSE
+       <br>
+       K24CN
+    </p>
+    <div class="groove">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus?</pre>
+    </div>
+  </body>
+  </html>

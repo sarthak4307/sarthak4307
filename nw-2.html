@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .Yellow {
+            background-color: yellow;
+        }
+        .Blue {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Time</td>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thursday</td>
+            <td>Friday</td>
+        </tr>
+        <tr>
+            <td class="Yellow" colspan="2">9:00-10:00 AM</td>
+            <td class="Blue" colspan="4">Math Workshop</td>
+            <td class="Blue" colspan="2">Team Meeting</td>
+            <td colspan="6" class="Blue">Guest Lecture: AI</td>
+            <td colspan="2">Free Slot</td>
+            <td class="Blue" colspan="2">Data Science Lab</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="Yellow">10:00AM-11:00AM</td>
+            <td colspan="4" class="Blue">Web Development</td>
+            <td colspan="2">Project Work</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="Yellow">11:00 AM-12:00 PM</td>
+            <td colspan="2" class="Blue">Team Meeting</td>
+            <td colspan="2">Free Slot</td>
+            <td colspan="4" class="Blue">Machine Learning</td>
+        </tr>
+        <tr>
+            <td colspan="2">12:00-1:00 PM</td>
+            <td colspan="2">Project Work</td>
+            <td colspan="2">Free Slot</td>
+            <td colspan="2">Lunch Break</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5 - Navigation Bar</title>
+    <style>
+        /* General styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1em 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home" id="home" class="active">Home</a>
+        <a href="#about" id="about">About</a>
+        <a href="#services" id="services">Services</a>
+        <a href="#contact" id="contact">Contact</a>
+    </div>
+
+    <!-- Sections for navigation -->
+    <section id="home-section">
+        <h1>Welcome to Home</h1>
+        <p>This is the home section.</p>
+    </section>
+
+    <section id="about-section">
+        <h1>About Us</h1>
+        <p>This is the about section.</p>
+    </section>
+
+    <section id="services-section">
+        <h1>Our Services</h1>
+        <p>This is the services section.</p>
+    </section>
+
+    <section id="contact-section">
+        <h1>Contact Us</h1>
+        <p>This is the contact section.</p>
+    </section>
+
+    <script>
+        // Function to handle active nav links
+        const navbarLinks = document.querySelectorAll('.navbar a');
+
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove 'active' class from all links
+                navbarLinks.forEach(nav => nav.classList.remove('active'));
+                
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

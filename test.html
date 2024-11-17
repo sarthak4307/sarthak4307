@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <body>     
+        <div class="container">         
+            <h1>HealthHub - Medical Appointment</h1>         
+            <form action="process_form.php" method="post">             
+                <label for="name">Patient Name:</label>             
+        <input type="text" id="name" name="name" required>
+        <label for="address">Patient Address:</label>             
+        <textarea id="address" name="address" required></textarea>              
+        <label for="health-issues">Health Issues:</label>             
+        <textarea id="health-issues" name="health-issues" required></textarea>              
+        <label for="appointment-date">Preferred Appointment Date:</label>             
+        <input type="date" id="appointment-date" name="appointment-date" required>              
+        <input type="submit" value="Schedule Appointment">         
+    </form></div>
+</body>
+</html>

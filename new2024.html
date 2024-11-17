@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6x5 Table</title>
+    <style>
+        .border{
+            border-style: groove;
+        }
+        .Yellow{
+            background-color: yellow;
+        }
+        .Blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" >
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="Yellow">9:00-10:00 AM</td>
+            <td rowspan="2" class="Blue">Math Workshop</td>
+            <td rowspan="2" class="Blue">Team Meeting</td>
+            <td rowspan="6" class="Blue">Guest Lecture: AI</td>
+            <td rowspan="2">Free Slot</td>
+            <td class="Blue" rowspan="2">Data Science Lab</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>3,2</td>
+            <td>3,3</td>
+            <td>3,4</td>
+            <td>3,5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:00AM-12:00PM</td>
+            <td rowspan="2">Team Meeting</td>
+            <td rowspan="2">Free Slot</td>
+            <td rowspan="4" class="Blue">Machine Learning</td>
+        </tr>
+        <tr>
+            <td>5,1</td>
+            <td>5,2</td>
+            <td>5,3</td>
+            <td>5,4</td>
+            <td>5,5</td>
+        </tr>
+        <tr>
+            <td>6,1</td>
+            <td>6,2</td>
+            <td>6,3</td>
+            <td>6,4</td>
+            <td>6,5</td>
+        </tr>
+    </table>
+</body>
+</html>
